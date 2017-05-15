@@ -1,0 +1,5 @@
+graficky
+
+1-4,A-L su figurky
+# je prazdne polickou na hracej ploche. Hracia plocha ma tvar kriza.
++ je prazdne miesto v startovacom domceku

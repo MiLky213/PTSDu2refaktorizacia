@@ -1,0 +1,40 @@
+Na zaciatku si program vypyta pocet hracov. Maximum su 4 hraci, 
+ak pouzivatel zada viac program ho upozorni ze prekrocil limit.
+Mimimum su 2 hraci, ak pouzivatel zada 1, program opat vypise chybu.
+
+Hraci vlastnia nasledujuce figurky:
+Hrac 1: 1 2 3 4
+Hrac 2: A B C D
+Hrac 3: E F G H
+Hrac 4: I J K L
+
+program sa ovlada prikazom g.play(), ostatne robi program sam.
+Pokial hrac hodi 6, alebo uz ma nejake figurky na hracej ploche, tak 
+sa program opyta hraca, ktorou figurkou chce pohnut.
+
+Pravidla hry:
+Podobne ako normalne clovece s tym ze, ak hrac hodi 6 moze si vytiahnut figurku na hraciu plochu.
+Figurky nechodia do domceku, ale kruzia neustale po hracej ploche. Vyhadzovanie funguje ako v klasickom clovece.
+Ak je ale figurka vyhodena vrati sa hracovi a ten s nou uz nesmie pohnut. Hrac ktory uz nesmie pohnut
+ziadnou figurkou automaticky prehrava.
+
+dalej:
+- pokial ma hrac stale vsetky  figurky doma, tak ma k dispozicii v kazdom kole 3 hody, ak ma uz niekoho na ploche
+tak hadze iba raz
+- v pripade ze hrac moze pohnut nejakou figurkou, tak sa ho program opyta 
+ktorou figurkou chce pohnut, ak hrac napise figurku ktoru nevlastni, t.j. superovu alebo neexistujucu, 
+tak straca tah (program mu oznami, ze premrhal svoj tah zlym vyberom)
+
+
+Zakladne testovacie programy sa v tomto pripade robia tazko.
+Co je ale mozne je otestovat funkciu:
+
+tu, ktora pracuje s poctom hracov. T.j. na vstupe jej dat 1,2-4,5+
+1 - vypise chybu
+2-4 - vytvori hraciu plochu so zadanim poctom hracov
+5+ - vypise ze pocet hracov je prilis vysoky
+
+tu, ktora ma na starosti vyber figurky
+spravne zadana figurka - figurka sa posunie o hodene cislo, resp. dostane sa na hraciu plochu
+nespravne zadana figurka - program ukonci tah tohto hraca a ide nasledujuci
+
